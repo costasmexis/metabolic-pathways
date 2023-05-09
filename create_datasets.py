@@ -161,6 +161,14 @@ def main():
     
     # concatenate the dataframes vertically
     concatenated = pd.concat([pairs, kegg_pairs], ignore_index=True)
+
+    source_mw = df.set_index('id')['mol_weight']
+    target_mw = source_mw.reindex(concatenated['target']).values
+
+    concatenated['MW'] = abs(source_mw.reindex(concatenated['source']).values - target_mw) / (source_mw.reindex(concatenated['source']).values + target_mw + 1e-6)
+
+    concatenated['num_reactions'] = concatenated['KEGG_reactions'].apply(lambda x: len(x.split(',')))
+    
     print(concatenated.shape)
     concatenated.to_csv('data/pairs_final.csv')
 

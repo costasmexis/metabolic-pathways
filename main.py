@@ -18,17 +18,10 @@ import seaborn as sns
 pairs = pd.read_csv('data/pairs_final.csv', index_col=0)
 df = pd.read_csv('data/compounds_final.csv', index_col=0)
 
-source_mw = df.set_index('id')['mol_weight']
-target_mw = source_mw.reindex(pairs['target']).values
-pairs['MW'] = abs(source_mw.reindex(pairs['source']).values - target_mw) / (source_mw.reindex(pairs['source']).values + target_mw + 1e-6)
-pairs['num_reactions'] = pairs['KEGG_reactions'].apply(lambda x: len(x.split(',')))
 print('pairs:', pairs.shape, '\ncompounds:', df.shape)
 
-for i in range(1, 11):
-    print(f'Number of pairs existing in {i} reactios:', len(pairs[pairs['num_reactions'] == i]))
-    
-print()    
-print('Number of pairs existing in more that 5 reactions:', len(pairs[pairs['num_reactions'] > 5]))
+# some pairs have missing 'MW' so we will drop them for now
+pairs.dropna(inplace=True)
 
 # *********** IMPORT TO NETWORKX *********************
 import networkx as nx
@@ -87,7 +80,7 @@ print(data.shape)
 data.to_csv('data/curated_pairs.csv')
 
 # read KEGG cofactors from PYMINER paper
-cofactors = pd.read_csv('data/cofactors_KEGG.csv')
+cofactors = pd.read_csv('data/original/cofactors_KEGG.csv')
 pyminer_cofactors = cofactors['Entry'].unique()
 print('Number of cofactors: ', cofactors['Entry'].nunique())
 
@@ -191,7 +184,11 @@ def constrained_shortest_path(test_cases):
         
     CORRECT = []
     for i in range(len(test_cases)):
-        CORRECT.append(BEST[i] == test_cases['Pathway '].iloc[i].split(','))
+        try:
+            CORRECT.append(BEST[i] == test_cases['Pathway '].iloc[i].split(','))
+        except KeyError:
+            CORRECT.append(BEST[i] == test_cases['Pathway'].iloc[i].split(','))
+
         
     print(f'Correct pathway predictions: {CORRECT.count(True)}')
     print(f'Correct pathway predictions (%): {100 * CORRECT.count(True) / len(CORRECT)}')
@@ -200,7 +197,7 @@ def constrained_shortest_path(test_cases):
 
 
 ''' Load file with test cases from NICEpath '''
-test_cases = pd.read_csv('data/test_cases.csv')
+test_cases = pd.read_csv('data/original/test_cases.csv')
 test_cases['source'] = test_cases['Pathway '].apply(lambda x: x.split(',')[0])
 test_cases['target'] = test_cases['Pathway '].apply(lambda x: x.split(',')[len(x.split(','))-1])
 test_cases['paths_list'] = test_cases['Pathway '].apply(lambda x: x.split(','))
@@ -211,9 +208,10 @@ print('Constrained shortest paths:')
 constrained_paths = constrained_shortest_path(test_cases=test_cases)
 
 ######### NEW VALIDATION SET ###########
-pyminer_test = pd.read_csv('data/pyminer_validation_set.csv', delimiter=';', header=None, names=['Pathway'])
+pyminer_test = pd.read_csv('data/original/pyminer_validation_set.csv', delimiter=';', header=None, names=['Pathway'])
 pyminer_test['source'] = pyminer_test['Pathway'].apply(lambda x: x.split(',')[0])
 pyminer_test['target'] = pyminer_test['Pathway'].apply(lambda x: x.split(',')[len(x.split(','))-1])
+pyminer_test['paths_list'] = pyminer_test['Pathway'].apply(lambda x: x.split(','))
 
 print('Simple weighted shortes paths:')
 correct_pathways = simple_weighted_shortest_path(pyminer_test)
