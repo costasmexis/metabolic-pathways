@@ -1,0 +1,210 @@
+Entry,Name,Formula,Exact mass,Mol weight,Structure Url,Canonical SMILES,AddHs SMILES,Reaction Number,Pathway Number,Module Number,Enzyme Class Number,PubChem Id,ChEBI Id,Reference,Family
+C00006,NADP+,,,,,NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1,,1057,,,,3308,"[""18009""]","""""",Double
+C00005,NADPH,,,,,NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1,,1055,,,,3307,"[""16474""]","""""",Double
+C00003,NAD+,,,,,NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](O)[C@@H]3O)[C@@H](O)[C@H]2O)c1,,997,,,,3305,"[""15846""]","""""",Double
+C00004,NADH,,,,,NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1,,981,,,,3306,"[""16908""]","""""",Double
+C00019,S-Adenosyl-L-methionine,,,,,C[S+](CC[C@H](N)C(=O)[O-])C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O,,503,,,,3321,"[""15414"", ""67040""]","""""",Double
+C00021,S-Adenosyl-L-homocysteine,,,,,Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O,,445,,,,3323,"[""16680""]","""""",Double
+C03024,[Reduced NADPH---hemoprotein reductase],,,,,Cc1cc2c(cc1C)N(C[C@H](O)[C@H](O)[C@H](O)COP(=O)(O)O)c1[nH]c(=O)[nH]c(=O)c1N2,,378,,,,5930,[],"""""",Double
+C03161,[Oxidized NADPH---hemoprotein reductase],,,,,Cc1cc2nc3c(=O)[nH]c(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)COP(=O)(O)O)c2cc1C,,378,,,,6046,[],"""""",Double
+C00028,Acceptor,,,,,*CC,,247,,,,3330,"[""15339""]","""""",Double
+C00030,Reduced acceptor,,,,,[H]*([H])CC,,247,,,,3332,"[""17499""]","""""",Double
+C00138,Reduced ferredoxin,,,,,S1[Fe]S[Fe+]1,,136,,,,3438,"[""17513""]","""""",Double
+C00139,Oxidized ferredoxin,,,,,S1[Fe+]S[Fe+]1,,136,,,,3439,"[""17908""]","""""",Double
+C00016,FAD,,,,,Cc1cc2nc3c(=O)[nH]c(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](O)[C@@H]3O)c2cc1C,,82,,,,3318,"[""16238""]","""""",Double
+C01352,FADH2,,,,,Cc1cc2c(cc1C)N(C[C@H](O)[C@H](O)[C@H](O)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]1O)c1[nH]c(=O)[nH]c(=O)c1N2,,78,,,,4556,"[""17877""]","""""",Double
+C00996,Ferricytochrome b5,,,,,[Fe+3],,63,,,,4242,"[""18097""]","""""",Double
+C00999,Ferrocytochrome b5,,,,,[Fe+2],,63,,,,4245,[],"""""",Double
+C00054,"Adenosine 3',5'-bisphosphate",,,,,Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O,,65,,,,3356,"[""17985""]","""""",Double
+C00053,3'-Phosphoadenylyl sulfate,,,,,Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O,,63,,,,3355,"[""17980""]","""""",Double
+C00125,Ferricytochrome c,,,,,*NC(=O)[C@H](CSC(C)C1=C(C)/C2=C/c3c(C(C)SC[C@H](NC(*)=O)C(=O)N*)c(C)c4n3[Fe+]n3/c(c(C)c(CCC(=O)O)/c3=C/C3=N/C(=C\4)C(C)=C3CCC(=O)O)=C\C1=N2)NC(*)=O,,41,,,,3425,"[""15991""]","""""",Double
+C00126,Ferrocytochrome c,,,,,*NC(=O)[C@H](CSC(C)C1=C(C)/C2=C/c3c(C(C)SC[C@H](NC(*)=O)C(=O)N*)c(C)c4n3[Fe]n3/c(c(C)c(CCC(=O)O)/c3=C/C3=N/C(=C\4)C(C)=C3CCC(=O)O)=C\C1=N2)NC(*)=O,,41,,,,3426,"[""16928""]","""""",Double
+C00061,FMN,,,,,Cc1cc2nc3c(=O)[nH]c(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)COP(=O)(O)O)c2cc1C,,39,,,,3361,"[""17621""]","""""",Double
+C01847,FMNH2,,,,,Cc1cc2c(cc1C)N(C[C@H](O)[C@H](O)[C@H](O)COP(=O)(O)O)c1[nH]c(=O)[nH]c(=O)c1N2,,35,,,,4964,"[""16048""]","""""",Double
+C15602,Quinone,,,,,O=C1C=CC(=O)C=C1,,37,,,,17396594,"[""16509""]","""""",Double
+C15603,Hydroquinone,,,,,Oc1ccc(O)cc1,,36,,,,17396595,"[""17594""]","""""",Double
+C00342,Thioredoxin,,,,,*N[C@@H](CS)C(=O)N[C@@H](*)C(=O)N[C@@H](*)C(=O)N[C@@H](CS)C(*)=O,,29,,,,3635,"[""15033"", ""15967""]","""""",Double
+C00343,Thioredoxin disulfide,,,,,*N[C@H]1CSSC[C@@H](C(*)=O)NC(=O)[C@H](*)NC(=O)[C@H](*)NC1=O,,29,,,,3636,"[""18191""]","""""",Double
+C00662,Reduced adrenal ferredoxin,,,,,S1[Fe]S[Fe+]1,,25,,,,3931,"[""16906""]","""""",Double
+C00667,Oxidized adrenal ferredoxin,,,,,S1[Fe+]S[Fe+]1,,25,,,,3936,[],"""""",Double
+C04253,Electron-transferring flavoprotein,,,,,Cc1cc2nc3c(=O)[nH]c(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](O)[C@@H]3O)c2cc1C,,21,,,,6918,[],"""""",Double
+C04570,Reduced electron-transferring flavoprotein,,,,,Cc1cc2c(cc1C)N(C[C@H](O)[C@H](O)[C@H](O)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]1O)c1[nH]c(=O)[nH]c(=O)c1N2,,21,,,,7171,[],"""""",Double
+C02745,Reduced flavodoxin,,,,,Cc1cc2c(cc1C)N(C[C@H](O)[C@H](O)[C@H](O)COP(=O)(O)O)c1[nH]c(=O)[nH]c(=O)c1N2,,12,,,,5705,[],"""""",Double
+C02869,Oxidized flavodoxin,,,,,Cc1cc2nc3c(=O)[nH]c(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)COP(=O)(O)O)c2cc1C,,12,,,,5805,[],"""""",Double
+C22150,Reduced [2Fe-2S] ferredoxin,,,,,S1[Fe]S[Fe+]1,,10,,,,405226341,[],"""""",Double
+C22151,Oxidized [2Fe-2S] ferredoxin,,,,,S1[Fe+]S[Fe+]1,,10,,,,405226342,[],"""""",Double
+C06020,Methyl-Co(III) corrinoid protein,,,,,*/C1=C2/N=C(/C(*)=C3\N=C(/C(*)=C4\N([Co+]C)C(*)(C(*)(*)C4(*)*)C4(*)N=C1C(*)(*)C4(*)*)C(*)(*)C3(*)*)C(*)(*)C2(*)*,,11,,,,8292,[],"""""",Double
+C06021,Co(I) corrinoid protein,,,,,*/C1=C2/N=C(/C(*)=C3\N=C(/C(*)=C4\N([Co])C(*)(C(*)(*)C4(*)*)C4(*)N=C1C(*)(*)C4(*)*)C(*)(*)C3(*)*)C(*)(*)C2(*)*,,11,,,,8293,"[""33913""]","""""",Double
+C00615,Protein histidine,,,,,*NC(=O)[C@H](Cc1c[nH]cn1)NC(*)=O,,35,,,,3889,[],"""""",Double
+C04261,Protein N(pi)-phospho-L-histidine,,,,,*NC(=O)[C@H](Cc1cncn1P(=O)(O)O)NC(*)=O,,31,,,,6926,[],"""""",Double
+C00390,Ubiquinol,,,,,COc1c(O)c(C)c(C/C=C(\C)CCC=C(C)C)c(O)c1OC,,17,,,,3680,"[""17976""]","""""",Double
+C00399,Ubiquinone,,,,,COC1=C(OC)C(=O)C(C/C=C(\C)CCC=C(C)C)=C(C)C1=O,,16,,,,3689,"[""16389""]","""""",Double
+C00876,Coenzyme F420,,,,,C[C@H](OP(=O)(O)OC[C@@H](O)[C@@H](O)[C@@H](O)Cn1c2nc(=O)[nH]c(=O)c-2cc2ccc(O)cc21)C(=O)N[C@@H](CCC(=O)N[C@@H](CCC(=O)O)C(=O)O)C(=O)O,,17,,,,4132,"[""16848""]","""""",Double
+C01080,Reduced coenzyme F420,,,,,C[C@H](OP(=O)(O)OC[C@@H](O)[C@@H](O)[C@@H](O)CN1c2cc(O)ccc2Cc2c1[nH]c(=O)[nH]c2=O)C(=O)N[C@@H](CCC(=O)N[C@@H](CCC(=O)O)C(=O)O)C(=O)O,,15,,,,4318,"[""15823""]","""""",Double
+C04488,"5-Methyl-5,6,7,8-tetrahydromethanopterin",,,,,C[C@@H]1Nc2nc(N)[nH]c(=O)c2N(C)[C@H]1[C@@H](C)Nc1ccc(C[C@H](O)[C@H](O)[C@H](O)CO[C@H]2O[C@H](COP(=O)(O)O[C@@H](CCC(=O)O)C(=O)O)[C@@H](O)[C@H]2O)cc1,,3,,,,7107,[],"""""",Double
+C01217,"5,6,7,8-Tetrahydromethanopterin",,,,,C[C@@H]1Nc2nc(N)[nH]c(=O)c2N[C@H]1[C@@H](C)Nc1ccc(C[C@H](O)[C@H](O)[C@H](O)CO[C@H]2O[C@H](COP(=O)(O)O[C@@H](CCC(=O)O)C(=O)O)[C@@H](O)[C@H]2O)cc1,,9,,,,4439,"[""17321""]","""""",Double
+C02682,Ferricytochrome c3,,,,,[Fe+3],,2,,,,5651,[],"""""",Double
+C02684,Ferrocytochrome c3,,,,,[Fe+2],,2,,,,5653,"[""17714""]","""""",Double
+C18233,Ferricytochrome cL,,,,,[Fe+3],,4,,,,103061415,"[""81596""]","""""",Double
+C18234,Ferrocytochrome cL,,,,,[Fe+2],,4,,,,103061416,"[""81597""]","""""",Double
+C00828,Menaquinone,,,,,CC(C)=CCC/C(C)=C/CC1=C(C)C(=O)c2ccccc2C1=O,,9,,,,4086,"[""16374""]","""""",Double
+C05819,Menaquinol,,,,,CC(C)=CCC/C(C)=C/Cc1c(C)c(O)c2ccccc2c1O,,8,,,,8114,"[""18151""]","""""",Double
+C10385,Plastoquinone-9,,,,,CC(C)=CCC/C(C)=C/CC/C(C)=C/CC/C(C)=C/CC/C(C)=C/CC/C(C)=C/CC/C(C)=C/CC/C(C)=C/CC/C(C)=C/CC1=CC(=O)C(C)=C(C)C1=O,,1,,,,12571,"[""28377""]","""""",Double
+C16695,Plastoquinol-9,,,,,CC(C)=CCC/C(C)=C/CC/C(C)=C/CC/C(C)=C/CC/C(C)=C/CC/C(C)=C/CC/C(C)=C/CC/C(C)=C/CC/C(C)=C/Cc1cc(O)c(C)c(C)c1O,,2,,,,51091017,"[""28026""]","""""",Double
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+C00002,ATP,,,,,Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]1O,,693,,,,3304,"[""15422""]","""""",Quadruple
+C00008,ADP,,,,,Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]1O,,463,,,,3310,"[""16761""]","""""",Quadruple
+C00020,AMP,,,,,Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](O)[C@H]1O,,280,,,,3322,"[""16027""]","""""",Quadruple
+C00212,Adenosine,,,,,Nc1ncnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O,,12,,,,3512,"[""16335""]","""""",Quadruple
+C00044,GTP,,,,,Nc1nc2c(ncn2[C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)[nH]1,,47,,,,3346,"[""15996""]","""""",Quadruple
+C00035,GDP,,,,,Nc1nc2c(ncn2[C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)[nH]1,,70,,,,3337,"[""17552""]","""""",Quadruple
+C00144,GMP,,,,,Nc1nc2c(ncn2[C@@H]2O[C@H](COP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)[nH]1,,21,,,,3444,"[""165823"", ""17345""]","""""",Quadruple
+C00387,Guanosine,,,,,Nc1nc2c(ncn2[C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)c(=O)[nH]1,,6,,,,3677,"[""16750""]","""""",Quadruple
+C00063,CTP,,,,,Nc1ccn([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)n1,,49,,,,3363,"[""17677""]","""""",Quadruple
+C00112,CDP,,,,,Nc1ccn([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)n1,,16,,,,3412,"[""17239""]","""""",Quadruple
+C00055,CMP,,,,,Nc1ccn([C@@H]2O[C@H](COP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)n1,,82,,,,3357,"[""17361""]","""""",Quadruple
+C00475,Cytidine,,,,,Nc1ccn([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)c(=O)n1,,15,,,,3758,"[""17562""]","""""",Quadruple
+C00075,UTP,,,,,O=c1ccn([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)[nH]1,,27,,,,3375,"[""15713""]","""""",Quadruple
+C00015,UDP,,,,,O=c1ccn([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)[nH]1,,376,,,,3317,"[""17659""]","""""",Quadruple
+C00105,UMP,,,,,O=c1ccn([C@@H]2O[C@H](COP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)[nH]1,,36,,,,3405,"[""16695""]","""""",Quadruple
+C00299,Uridine,,,,,O=c1ccn([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)c(=O)[nH]1,,15,,,,3593,"[""16704""]","""""",Quadruple
+C00131,dATP,,,,,Nc1ncnc2c1ncn2[C@H]1C[C@H](O)[C@@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O1,,14,,,,3431,"[""16284""]","""""",Quadruple
+C00206,dADP,,,,,Nc1ncnc2c1ncn2[C@H]1C[C@H](O)[C@@H](COP(=O)(O)OP(=O)(O)O)O1,,12,,,,3506,"[""16174""]","""""",Quadruple
+C00360,dAMP,,,,,Nc1ncnc2c1ncn2[C@H]1C[C@H](O)[C@@H](COP(=O)(O)O)O1,,3,,,,3651,"[""17713""]","""""",Quadruple
+C00559,Deoxyadenosine,,,,,Nc1ncnc2c1ncn2[C@H]1C[C@H](O)[C@@H](CO)O1,,4,,,,3839,"[""17256""]","""""",Quadruple
+C00286,dGTP,,,,,Nc1nc2c(ncn2[C@H]2C[C@H](O)[C@@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O2)c(=O)[nH]1,,10,,,,3581,"[""16497""]","""""",Quadruple
+C00361,dGDP,,,,,Nc1nc2c(ncn2[C@H]2C[C@H](O)[C@@H](COP(=O)(O)OP(=O)(O)O)O2)c(=O)[nH]1,,6,,,,3652,"[""28862""]","""""",Quadruple
+C00362,dGMP,,,,,Nc1nc2c(ncn2[C@H]2C[C@H](O)[C@@H](COP(=O)(O)O)O2)c(=O)[nH]1,,4,,,,3653,"[""16192""]","""""",Quadruple
+C00330,Deoxyguanosine,,,,,Nc1nc2c(ncn2[C@H]2C[C@H](O)[C@@H](CO)O2)c(=O)[nH]1,,4,,,,3624,"[""17172""]","""""",Quadruple
+C00458,dCTP,,,,,Nc1ccn([C@H]2C[C@H](O)[C@@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O2)c(=O)n1,,9,,,,3742,"[""16311""]","""""",Quadruple
+C00705,dCDP,,,,,Nc1ccn([C@H]2C[C@H](O)[C@@H](COP(=O)(O)OP(=O)(O)O)O2)c(=O)n1,,6,,,,3972,"[""28846""]","""""",Quadruple
+C00239,dCMP,,,,,Nc1ccn([C@H]2C[C@H](O)[C@@H](COP(=O)(O)O)O2)c(=O)n1,,9,,,,3538,"[""15918""]","""""",Quadruple
+C00881,Deoxycytidine,,,,,Nc1ccn([C@H]2C[C@H](O)[C@@H](CO)O2)c(=O)n1,,4,,,,4137,"[""15698""]","""""",Quadruple
+C00459,dTTP,,,,,Cc1cn([C@H]2C[C@H](O)[C@@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O2)c(=O)[nH]c1=O,,8,,,,3743,"[""18077""]","""""",Quadruple
+C00363,dTDP,,,,,Cc1cn([C@H]2C[C@H](O)[C@@H](COP(=O)(O)OP(=O)(O)O)O2)c(=O)[nH]c1=O,,69,,,,3654,"[""18075""]","""""",Quadruple
+C00364,dTMP,,,,,Cc1cn([C@H]2C[C@H](O)[C@@H](COP(=O)(O)O)O2)c(=O)[nH]c1=O,,9,,,,3655,"[""17013""]","""""",Quadruple
+C00214,Deoxythymidine,,,,,Cc1cn([C@H]2C[C@H](O)[C@@H](CO)O2)c(=O)[nH]c1=O,,6,,,,3514,"[""17748""]","""""",Quadruple
+C00460,dUTP,,,,,O=c1ccn([C@H]2C[C@H](O)[C@@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O2)c(=O)[nH]1,,8,,,,3744,"[""17625""]","""""",Quadruple
+C01346,dUDP,,,,,O=c1ccn([C@H]2C[C@H](O)[C@@H](COP(=O)(O)OP(=O)(O)O)O2)c(=O)[nH]1,,6,,,,4551,"[""28850""]","""""",Quadruple
+C00365,dUMP,,,,,O=c1ccn([C@H]2C[C@H](O)[C@@H](COP(=O)(O)O)O2)c(=O)[nH]1,,8,,,,3656,"[""17622""]","""""",Quadruple
+C00526,Deoxyuridine,,,,,O=c1ccn([C@H]2C[C@H](O)[C@@H](CO)O2)c(=O)[nH]1,,6,,,,3809,"[""16450""]","""""",Quadruple
+C00081,ITP,,,,,O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]1O,,19,,,,3381,"[""16039""]","""""",Quadruple
+C00104,IDP,,,,,O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]1O,,18,,,,3404,"[""17808""]","""""",Quadruple
+C00130,IMP,,,,,O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](O)[C@H]1O,,12,,,,3430,"[""17202""]","""""",Quadruple
+C00294,Inosine,,,,,O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O,,8,,,,3588,"[""17596""]","""""",Quadruple
+C01345,dITP,,,,,O=c1[nH]cnc2c1ncn2[C@H]1C[C@H](O)[C@@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O1,,2,,,,4550,"[""28807""]","""""",Quadruple
+C01344,dIDP,,,,,O=c1[nH]cnc2c1ncn2[C@H]1C[C@H](O)[C@@H](COP(=O)(O)OP(=O)(O)O)O1,,2,,,,4549,"[""28823""]","""""",Quadruple
+C06196,dIMP,,,,,O=c1[nH]cnc2c1ncn2[C@H]1C[C@H](O)[C@@H](COP(=O)(O)O)O1,,2,,,,8446,"[""28806""]","""""",Quadruple
+C05512,Deoxyinosine,,,,,O=c1[nH]cnc2c1ncn2[C@H]1C[C@H](O)[C@@H](CO)O1,,2,,,,7859,"[""28997""]","""""",Quadruple
+C00700,XTP,,,,,O=c1[nH]c(=O)c2ncn([C@@H]3O[C@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]3O)c2[nH]1,,3,,,,3968,"[""10049""]","""""",Quadruple
+C01337,XDP,,,,,O=c1[nH]c(=O)c2ncn([C@@H]3O[C@H](COP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]3O)c2[nH]1,,1,,,,4545,[],"""""",Quadruple
+C00655,XMP,,,,,O=c1[nH]c(=O)c2ncn([C@@H]3O[C@H](COP(=O)(O)O)[C@@H](O)[C@H]3O)c2[nH]1,,7,,,,3925,"[""15652""]","""""",Quadruple
+C01762,Xanthosine,,,,,O=c1[nH]c(=O)c2ncn([C@@H]3O[C@H](CO)[C@@H](O)[C@H]3O)c2[nH]1,,5,,,,4895,"[""18107""]","""""",Quadruple
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+C00001,H2O,,,,,O,,4068,,,,3303,"[""15377""]","""""",Single
+C00080,H+,,,,,[H+],,2443,,,,3380,"[""15378"", ""24636""]","""""",Single
+C00007,Oxygen,,,,,O=O,,1887,,,,3309,"[""15379"", ""25805""]","""""",Single
+C00011,CO2,,,,,O=C=O,,745,,,,3313,"[""16526""]","""""",Single
+C00013,Diphosphate,,,,,O=P(O)(O)OP(=O)(O)O,,702,,,,3315,"[""18361"", ""29888""]","""""",Single
+C00009,Orthophosphate,,,,,O=P(O)(O)O,,589,,,,3311,"[""18367"", ""26078""]","""""",Single
+C00014,Ammonia,,,,,N,,391,,,,3316,"[""16134""]","""""",Single
+C00027,Hydrogen peroxide,,,,,OO,,275,,,,3329,"[""16240""]","""""",Single
+C01327,Hydrochloric acid,,,,,Cl,,65,,,,4538,"[""17883""]","""""",Single
+C00059,Sulfate,,,,,O=S(=O)(O)O,,44,,,,3359,"[""16189"", ""26836""]","""""",Single
+C00094,Sulfite,,,,,O=S(O)O,,44,,,,3394,"[""48854""]","""""",Single
+C00283,Hydrogen sulfide,,,,,S,,47,,,,3578,"[""16136""]","""""",Single
+C00698,Cl-,,,,,[Cl-],,47,,,,3966,"[""17996""]","""""",Single
+C00088,Nitrite,,,,,O=NO,,40,,,,3388,"[""16301"", ""25567""]","""""",Single
+C00288,HCO3-,,,,,O=C([O-])O,,24,,,,3583,"[""17544""]","""""",Single
+C00533,Nitric oxide,,,,,[N]=O,,22,,,,3815,"[""16480""]","""""",Single
+C00237,CO,,,,,[C-]#[O+],,19,,,,3536,"[""17245""]","""""",Single
+C00244,Nitrate,,,,,O=[N+]([O-])O,,13,,,,3543,"[""48107""]","""""",Single
+C01324,Bromide,,,,,[Br-],,12,,,,4536,"[""15858""]","""""",Single
+C00697,Nitrogen,,,,,N#N,,10,,,,3965,"[""17997""]","""""",Single
+C00087,Sulfur,,,,,[S],,9,,,,3387,"[""17909"", ""26833""]","""""",Single
+C00708,Iodide,,,,,[I-],,8,,,,3975,"[""16382""]","""""",Single
+C05684,Selenite,,,,,O=[Se]([O-])[O-],,8,,,,7991,"[""18212""]","""""",Single
+C13645,Hydrobromic acid,,,,,Br,,8,,,,586255,"[""47266""]","""""",Single
+C00887,Nitrous oxide,,,,,[N-]=[N+]=O,,7,,,,4143,"[""17045""]","""""",Single
+C01528,Hydrogen selenide,,,,,[SeH2],,7,,,,4690,"[""16503""]","""""",Single
+C16487,Hydrofluoric acid,,,,,F,,6,,,,47205783,"[""29228""]","""""",Single
+C01382,Iodine,,,,,II,,5,,,,4577,"[""17606""]","""""",Single
+C05590,Hydroiodic acid,,,,,I,,4,,,,7915,"[""43451""]","""""",Single
+C00704,Superoxide,,,,,[O][O-],,4,,,,3971,"[""18421""]","""""",Single
+C05697,Selenate,,,,,O=[Se](=O)(O)O,,3,,,,8004,"[""18170""]","""""",Single
+C01529,Selenium,,,,,[Se],,2,,,,4691,"[""27568""]","""""",Single
+C00742,Fluoride,,,,,[F-],,1,,,,4005,"[""17051""]","""""",Single
+C00282,Hydrogen,,,,,[H][H],,16,,,,3577,"[""18276""]","""""",Single
+C01328,HO-,,,,,[OH-],,2,,,,4539,"[""16234""]","""""",Single
+C01353,Carbonic acid,,,,,O=C(O)O,,2,,,,4557,"[""28976""]","""""",Single
+C00536,Triphosphate,,,,,O=P(O)(O)OP(=O)(O)OP(=O)(O)O,,10,,,,3818,"[""18036"", ""39949""]","""""",Single
+C01342,NH4+,,,,,[NH4+],,0,,,,4547,"[""28938""]","""""",Single
+C11481,HSO3-,,,,,O=S([O-])O,,5,,,,13651,"[""17137""]","""""",Single
+C00320,Thiosulfate,,,,,O=S(=O)(O)[S-],,18,,,,3614,"[""33539"", ""33541""]","""""",Single
+C00462,Halide,,,,,[1*][H],,7,,,,3746,"[""16042""]","""""",Single
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+C00002,ATP,,,,,Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]1O,,693,,,,3304,"[""15422""]","""""",Single
+C00008,ADP,,,,,Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]1O,,463,,,,3310,"[""16761""]","""""",Single
+C00020,AMP,,,,,Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](O)[C@H]1O,,280,,,,3322,"[""16027""]","""""",Single
+C00044,GTP,,,,,Nc1nc2c(ncn2[C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)[nH]1,,47,,,,3346,"[""15996""]","""""",Single
+C00035,GDP,,,,,Nc1nc2c(ncn2[C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)[nH]1,,70,,,,3337,"[""17552""]","""""",Single
+C00144,GMP,,,,,Nc1nc2c(ncn2[C@@H]2O[C@H](COP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)[nH]1,,21,,,,3444,"[""165823"", ""17345""]","""""",Single
+C00063,CTP,,,,,Nc1ccn([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)n1,,49,,,,3363,"[""17677""]","""""",Single
+C00112,CDP,,,,,Nc1ccn([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)n1,,16,,,,3412,"[""17239""]","""""",Single
+C00055,CMP,,,,,Nc1ccn([C@@H]2O[C@H](COP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)n1,,82,,,,3357,"[""17361""]","""""",Single
+C00075,UTP,,,,,O=c1ccn([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)[nH]1,,27,,,,3375,"[""15713""]","""""",Single
+C00015,UDP,,,,,O=c1ccn([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)[nH]1,,376,,,,3317,"[""17659""]","""""",Single
+C00105,UMP,,,,,O=c1ccn([C@@H]2O[C@H](COP(=O)(O)O)[C@@H](O)[C@H]2O)c(=O)[nH]1,,36,,,,3405,"[""16695""]","""""",Single
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+C00010,CoA,,,,,CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS,,626,,,,3312,"[""15346""]","""""",Single
+C00051,Glutathione,,,,,N[C@@H](CCC(=O)N[C@@H](CS)C(=O)NCC(=O)O)C(=O)O,,90,,,,3353,"[""16856""]","""""",Single
+C00058,Formate,,,,,O=CO,,89,,,,3358,"[""15740"", ""30751""]","""""",Single
+C00067,Formaldehyde,,,,,C=O,,93,,,,3367,"[""16842""]","""""",Single
+C00132,Methanol,,,,,CO,,41,,,,3432,"[""17790""]","""""",Single
+C00229,Acyl-carrier protein,,,,,*S,,86,,,,3528,"[""18359""]","""""",Single
+C00218,Methylamine,,,,,CN,,24,,,,3518,"[""16830""]","""""",Single
+C00543,Dimethylamine,,,,,CNC,,11,,,,3824,"[""17170""]","""""",Single
+C00409,Methanethiol,,,,,CS,,11,,,,3699,"[""16007""]","""""",Single
+C00797,Ethylamine,,,,,CCN,,5,,,,4055,"[""15862""]","""""",Single
+C00488,Formamide,,,,,NC=O,,3,,,,3771,"[""16397""]","""""",Single
+C01417,Cyanate,,,,,N#CO,,3,,,,4604,"[""28024"", ""29195""]","""""",Single
+C00032,Heme,,,,,C=CC1=C(C)/C2=C/c3c(C=C)c(C)c4n3[Fe]n3/c(c(C)c(CCC(=O)O)/c3=C/C3=N/C(=C\4)C(C)=C3CCC(=O)O)=C\C1=N2,,20,,,,3334,"[""17627"", ""26355"", ""30413""]","""""",Single
+C00039,DNA,,,,,*[C@H]1C[C@H](O)[C@@H](COP(=O)(O)O[C@H]2C[C@H](*)O[C@@H]2COP(=O)(O)O[C@H]2C[C@H](*)O[C@@H]2CO)O1,,10,,,,3341,"[""16991""]","""""",Single
+C00046,RNA,,,,,*[C@@H]1O[C@H](COP(=O)(O)O[C@H]2[C@@H](O)[C@H](*)O[C@@H]2COP(=O)(O)O[C@H]2[C@@H](O)[C@H](*)O[C@@H]2COP(=O)(O)O)[C@@H](O)[C@H]1O,,12,,,,3348,[],"""""",Single
+C21097,Peptidyl-carrier protein,,,,,*S,,15,,,,310920478,[],"""""",Single
+C00017,Protein,,,,,*[C@H](N)C(=O)N[C@@H](*)C(=O)O,,13,,,,3319,"[""16541""]","""""",Single
+C00012,Peptide,,,,,*C(N)C(=O)NC(*)C(=O)O,,7,,,,3314,"[""16670""]","""""",Single
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+C00038,Zinc cation,,,,,[Zn+2],,0,,,,3340,"[""27363"", ""29105""]","""""",Single
+C00070,Copper,,,,,[Cu],,0,,,,3370,"[""28694""]","""""",Single
+C00076,Calcium cation,,,,,[Ca+2],,0,,,,3376,"[""22984"", ""29108""]","""""",Single
+C00175,Cobalt ion,,,,,[Co+2],,2,,,,3475,"[""27638"", ""48828""]","""""",Single
+C00238,Potassium cation,,,,,[K+],,0,,,,3537,"[""26216"", ""29103""]","""""",Single
+C00291,Nickel,,,,,[Ni],,0,,,,3585,"[""28112""]","""""",Single
+C00305,Magnesium cation,,,,,[Mg+2],,4,,,,3599,"[""18420"", ""25107""]","""""",Single
+C00703,Mercury(2+),,,,,[Hg+2],,3,,,,3970,"[""16793""]","""""",Single
+C01319,Hg,,,,,[Hg],,1,,,,4533,"[""16170""]","""""",Single
+C01330,Sodium cation,,,,,[Na+],,3,,,,4541,"[""26708"", ""29101""]","""""",Single
+C01413,Cadmium,,,,,[Cd],,0,,,,4601,"[""22977"", ""48775""]","""""",Single
+C06268,Chromium,,,,,[Cr],,0,,,,8506,"[""28073""]","""""",Single
+C06710,Silver,,,,,[Ag],,0,,,,8935,"[""9141""]","""""",Single
+C13881,Barium cation,,,,,[Ba+2],,0,,,,854126,"[""37136""]","""""",Single
+C14818,Fe2+,,,,,[Fe+2],,21,,,,17395816,"[""29033""]","""""",Single
+C14819,Fe3+,,,,,[Fe+3],,7,,,,17395817,"[""29034""]","""""",Single
+C19161,Chromium (VI),,,,,[Cr+6],,0,,,,124489833,"[""33007""]","""""",Single
+C19368,Chromium (III),,,,,[Cr+3],,0,,,,124490040,"[""49544""]","""""",Single
+C19609,Nickel(2+),,,,,[Ni+2],,2,,,,124490278,[],"""""",Single
+C19610,Manganese(2+),,,,,[Mn+2],,3,,,,124490279,[],"""""",Single
+C19611,Manganese(3+),,,,,[Mn+3],,3,,,,124490280,[],"""""",Single
+C20294,Chromium (V),,,,,[Cr+5],,0,,,,163312034,[],"""""",Single
+C20295,Chromium (IV),,,,,[Cr+4],,0,,,,163312035,[],"""""",Single
+C19171,Cobalt,,,,,[Co],,0,,,,124489843,"[""27638""]","""""",Single
+C21744,Mn(IV)O2,,,,,O=[Mn]=O,,2,,,,350078321,[],"""""",Single
+C00023,Iron,,,,,[Fe],,0,,,,3325,"[""18248""]","""""",Single
+C00034,Manganese,,,,,[Mn],,0,,,,3336,"[""18291""]","""""",Single
+C00150,Molybdenum,,,,,[Mo],,0,,,,3450,"[""28685""]","""""",Single
