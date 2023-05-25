@@ -23,16 +23,16 @@ class Graph:
         return w
 
     def _get_mol_weight(self, data: Data, a, b):
-        
-        # if data.get_compound_by_id(a).is_cofactor or data.get_compound_by_id(b).is_cofactor:
-        #     return 999
+
+        if data.get_compound_by_id(a).is_cofactor or data.get_compound_by_id(b).is_cofactor:
+            return 999
         
         w_a = data.get_compound_by_id(a).mw
         w_b = data.get_compound_by_id(b).mw
         w = (np.abs(w_a-w_b) / (w_a+w_b+1e-6))
         return w
 
-    def create_graph(self, pairs):
+    def create_graph(self, data: Data, pairs):
         self.G = nx.from_pandas_edgelist(pairs, source='source', target='target', create_using=nx.Graph()) 
         print('# nodes:', self.G.number_of_nodes(), "\n# edges:", self.G.number_of_edges())
 
@@ -40,6 +40,10 @@ class Graph:
         self_loops = list(nx.selfloop_edges(self.G))
         self.G.remove_edges_from(self_loops)
         print('# nodes:', self.G.number_of_nodes(), "\n# edges:", self.G.number_of_edges())
+
+        # set node attributes
+        for node in self.G.nodes():
+            self.G.nodes[node]['mw'] = data.get_compound_by_id(node).mw
         
     def simple_weighted_shortest_path(self, data: Data, test_cases, method):
         '''

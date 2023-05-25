@@ -48,7 +48,7 @@ for index, row in rxns.iterrows():
 graph.get_number_of_occurences(pairs)
 
 # Create Graph
-graph.create_graph(pairs)
+graph.create_graph(data=data, pairs=pairs)
 
 ''' 
 *******************************************
