@@ -1,3 +1,7 @@
+'''
+- First script to run. It preprocesses the raw data taken from pyminer paper and generates the datasets.
+'''
+
 import pandas as pd
 from tqdm import tqdm
 import json

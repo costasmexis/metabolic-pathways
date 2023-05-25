@@ -6,8 +6,6 @@ class Data:
     def __init__(self):
         self.compounds = {}   # Compounds
         self.reactions = {}   # Reactions
-        # self.num_occurences = None # # number of times a metabolite apperas on pairs dataset
-        self.G = None # Graph structure
 
     def add_element(self, element_type, element):
         element_dict = {'compound': self.compounds, 'reaction': self.reactions}
