@@ -1,0 +1,6 @@
+O = c 1 c c ( - c 2 c c c ( O ) c c 2 ) o c 2 c ( [C@@H] 3 O [C@H] ( C O ) [C@@H] ( O ) [C@H] ( O ) [C@H] 3 O ) c ( O ) c c ( O ) c 1 2
+O = C 1 C C ( c 2 c c c ( O ) c c 2 ) O c 2 c c ( O ) c c ( O ) c 2 1
+O c 1 c c ( O ) c 2 c ( c 1 ) O C ( c 1 c c c ( O ) c c 1 ) C C 2 = O
+O c 1 c c c ( C 2 C C ( = O ) c 3 c ( O ) c c ( O ) c c 3 O 2 ) c c 1
+O c 1 c c ( O ) c 2 c ( c 1 ) O C ( c 1 c c c ( O ) c c 1 ) C = C 2
+O = C ( C n 1 c ( O ) c c ( O ) c 2 c 1 O ) c 1 c c ( O ) c c c 1 O

@@ -1,0 +1,1 @@
+O = C ( / C = C / c 1 c c c ( O ) c c 1 ) c 1 c ( O ) c c ( O ) c c 1 O . O = C 1 C [C@@H] ( c 2 c c c ( O ) c c 2 ) O c 2 c c ( O ) c c ( O ) c 2 1 . O = C 1 C C ( c 2 c c c ( O ) c c 2 ) O c 2 c 1 c ( O ) c c ( O ) c 2 [C@@H] 1 O [C@H] ( C O ) [C@@H] ( O ) [C@H] ( O ) [C@H] 1 O
