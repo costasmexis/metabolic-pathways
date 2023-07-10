@@ -7,9 +7,12 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 import random
+
 import sys
-sys.path.append('src/')
+sys.path.append('/home/WUR/g0012069/metabolic-pathways/retrosynthesis/src')
+
 from smiles_lstm.model.smiles_vocabulary import SMILESTokenizer, Vocabulary, create_vocabulary
+
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import warnings
 # ignore some deprecation warnings
@@ -35,7 +38,7 @@ def canonicalize_smiles(smiles):
     canonical_smiles = Chem.MolToSmiles(mol) #convert the previous mol object to SMILES using Chem.MolToSmiles()
     return canonical_smiles
 
-df = pd.read_csv('retrosynthesis-all', header=None)
+df = pd.read_csv('retrosynthesis/retrosynthesis-all', header=None)
 df['source'] = df[0].apply(lambda x: x.split('>>')[0])
 df['target'] = df[0].apply(lambda x: x.split('>>')[1])
 df['source'] = df['source'].apply(lambda x: canonicalize_smiles(x))
@@ -122,7 +125,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import random
-from torchtext.data import Field, BucetIterator
+from torchtext.data import Field, BucketIterator
 
 class Encoder(nn.Module):
     def __init__(self, input_size, embedding_size, hidden_size, num_layers, p):
@@ -154,7 +157,7 @@ class Decoder(nn.Module):
         self.rnn = nn.LSTM(embedding_size, hidden_size, num_layers, dropout=p)
         self.fc = nn.Linear(hidden_size, output_size)
 
-    def forward(self x, hidden, cell):
+    def forward(self, x, hidden, cell):
         # shape of x: (batch_size) but we want (1, batch_size)
         x = x.unsqueeze(0)
 
@@ -187,7 +190,7 @@ class Seq2Seq(nn.Module):
         hidden, cell = self.encoder(source)
 
         # Grab start token
-        x = traget[0]
+        x = target[0]
         
         for t in range(1, target_len):
             output, hidden, cell = self.decoder(x, hidden, cell)
@@ -203,7 +206,7 @@ class Seq2Seq(nn.Module):
 #### Training loop
 
 # Training Hyperparameters
-num_epochs = 10
+num_epochs = 3
 learning_rate = 0.001
 batch_size = 2048
 
@@ -212,12 +215,38 @@ load_model = False
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 input_size_encoder = len(vocabulary)
 input_size_decoder = len(vocabulary)
-ouput_size = len(vocabulary)
+output_size = len(vocabulary)
 encoder_embedding_size = 5
-decoder_embedding_sieze = 5
+decoder_embedding_size = 5
 hidden_size = 10
 num_layers = 1
 enc_dropout = 0.5
 dec_dropout = 0.5
 
-train_iterator, valid_iterator, test_iterator = BucetIterator.splits(train_dataw)
+encoder_net = Encoder(input_size_encoder, encoder_embedding_size,
+                      hidden_size, num_layers, enc_dropout).to(device)
+
+decoder_net = Decoder(input_size_decoder, decoder_embedding_size,
+                      hidden_size, output_size, num_layers, dec_dropout).to(device)
+
+model = Seq2Seq(encoder_net, decoder_net).to(device)
+
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+
+# Training loop
+for epoch in range(num_epochs):
+    total_loss = 0
+    num_batches = 0
+    model.train()
+    for i in tqdm(range(0, len(train_X), batch_size)):
+        # Prepare batch
+        batch_X = train_X[i:i+batch_size].to(device)
+        batch_y = train_y[i:i+batch_size].to(device)
+
+        # Forward pass
+        optimizer.zero_grad()
+        output = model(batch_X, batch_y)
+        # output shape: (trg_len, batch_size, output_dim)
+        print(output.shape)
+
